@@ -1,10 +1,114 @@
-<header>
-    <h1>サイトタイトル</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">自己紹介</a></li>
-            <li><a href="#works">実績</a></li>
-            <li><a href="#contact">お問い合わせ</a></li>
-        </ul>
-    </nav>
-</header>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>私の自己紹介ページ</title>
+    <style>
+        /* 全体のスタイル */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* ヘッダー部分 */
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* ナビゲーション */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* メインコンテンツ */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 自己紹介セクション */
+        .intro {
+            display: flex;
+            align-items: center;
+        }
+
+        .intro img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ddd;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <h1>私のポートフォリオサイト</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#works">作品</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- 自己紹介セクション -->
+        <section id="about" class="intro">
+            <img src="https://via.placeholder.com/150" alt="私の写真">
+            <div>
+                <h2>はじめまして！</h2>
+                <p>私の名前は田中太郎です。Webデザインやプログラミングに興味があり、これから自分のスキルを活かしてポートフォリオサイトを作成する予定です。趣味は読書と散歩です。</p>
+                <p>詳しくは<a href="https://example.com" target="_blank">こちらのサイト</a>もご覧ください。</p>
+            </div>
+        </section>
+
+        <!-- 作品紹介セクション（サンプル） -->
+        <section id="works">
+            <h2>私の作品</h2>
+            <p>ここには、今まで制作したWebサイトやアプリのサンプルを掲載予定です。</p>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2025 田中太郎. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
