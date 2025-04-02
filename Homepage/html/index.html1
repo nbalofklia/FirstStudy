@@ -1,0 +1,74 @@
+<!--最小限のHTML文書の例。基本構造-->
+<!DOCTYPE html> <!-- HTML5文書であることを宣言 -->
+<html lang="ja"> <!-- HTML文書全体を囲むタグ。lang="ja"で日本語の文書であることを指定 -->
+
+<head>
+    <!-- メタ情報（文字コード、タイトル、CSSやJavaScriptのリンクなど）を記述する部分 -->
+    <meta charset="UTF-8">
+    <title>サンプルページ</title>
+</head>
+
+<body>
+    <!-- 実際にブラウザに表示される内容（テキスト、画像、リンクなど）を記述する部分 -->
+    <h1>Hello World</h1>
+    <p><strong>初めてのHTMLページ</strong></p>
+
+    <h2>HTMLの基本</h2>
+    <h3>概要</h3>
+    <ul>
+        <li><strong>HTMLはHyper Text Markup Languageの略</strong><br>
+            Hyper Textは「超テキスト」、Markup Languageは「マークアップ言語」<br>
+            Webページを作成するための言語</li>
+
+        <li><strong>HTMLは階層構造を持つ</strong><br>
+            HTMLはインデントを使って階層を表現する</li>
+
+        <li><strong>HTMLは要素を持つ</strong><br>
+            要素は開始タグ、終了タグ、内容から構成される<br>
+            タグは&lt;タグ名&gt;で始まり、&lt;/タグ名&gt;で終わる<br>
+            タグの中に属性を指定することができる<br>
+            属性は&lt;タグ名 属性名="値"&gt;のように指定する</li>
+
+        <li><strong>HTMLは空要素を持つ</strong><br>
+            空要素は内容を持たないタグ。&lt;タグ名 /&gt;のように指定する。<br>
+            例：&lt;br /&gt;（改行）、&lt;hr /&gt;（水平線）<br>
+            HTML5では&lt;br&gt;のようにスラッシュを省略できる</li>
+        <!-- 例：&lt;br /&gt;（改行）、&lt;hr /&gt;（水平線） -->
+        <!-- 例：&lt;br&gt;（改行）、&lt;hr&gt;（水平線） -->
+
+        <li><strong>HTMLはコメントを持つ</strong><br>
+            コメントは&lt;!-- コメント --&gt;のように指定する</li>
+
+        <li><strong>HTMLはDOCTYPE宣言を持つ</strong><br>
+            DOCTYPE宣言は文書の種類を指定する<br>
+            DOCTYPE宣言は文書の最初に記述する</li>
+    </ul>
+
+    <h3>主要なHTMLタグ</h3>
+    <p>
+        <strong>見出し:</strong> &lt;h1&gt;~&lt;h6&gt;で文書の見出しを作成<br>
+        <strong>段落:</strong> &lt;p&gt;でテキスト段落を作成<br>
+        <strong>リンク:</strong> &lt;a href="URL"&gt;リンクテキスト&lt;/a&gt;でリンクを作成<br>
+        例：<a href="https://example.com">Exampleサイトへ</a><br>
+        <strong>画像:</strong> &lt;img src="画像のURL" alt="画像の説明"&gt;で画像を表示<br>
+        alt属性は画像が表示されない場合の代替テキスト<br>
+        例：<img src="https://example.com/image.jpg" alt="サンプル画像"><br>
+        <strong>リスト:</strong> &lt;ul&gt;で順不同リストを作成<br>
+        &lt;ol&gt;で順序付きリストを作成<br>
+        &lt;li&gt;でリスト項目を作成<br>
+        <strong>表:</strong> &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;で表を作成<br>
+        例：
+    <table border="1">
+        <tr>
+            <th>見出し1</th>
+            <th>見出し2</th>
+        </tr>
+        <tr>
+            <td>データ1</td>
+            <td>データ2</td>
+        </tr>
+    </table>
+    </p>
+</body>
+
+</html>
