@@ -1,65 +1,96 @@
 /* 全体のスタイル */
 body {
     font-family: Arial, sans-serif;
+    /* フォントの指定 */
     margin: 0;
+    /* マージンのリセット */
     padding: 0;
+    /* パディングのリセット */
     line-height: 1.6;
+    /* 行間の設定 */
     background-color: #f9f9f9;
+    /* 背景色の設定 */
     color: #333;
+    /* 文字色の設定 */
 }
 
 /* ヘッダー部分 */
 header {
     background-color: #4CAF50;
+    /* ヘッダーの背景色 */
     color: #fff;
+    /* ヘッダーの文字色 */
     padding: 20px;
+    /* ヘッダーのパディング */
     text-align: center;
+    /* テキストの中央揃え */
 }
 
 /* ナビゲーション */
 nav ul {
     list-style: none;
+    /* リストスタイルのリセット */
     padding: 0;
+    /* パディングのリセット */
     display: flex;
+    /* フレックスボックスを使用 */
     justify-content: center;
+    /* 中央揃え */
     margin: 10px 0;
+    /* マージンの設定 */
 }
 
 nav ul li {
     margin: 0 15px;
+    /* リストアイテムのマージン */
 }
 
 nav ul li a {
     color: #fff;
+    /* リンクの文字色 */
     text-decoration: none;
+    /* リンクの下線を消す */
 }
 
 /* メインコンテンツ */
 main {
     max-width: 800px;
+    /* 最大幅の設定 */
     margin: 20px auto;
+    /* 中央揃え */
     padding: 20px;
+    /* パディングの設定 */
     background-color: #fff;
+    /* 背景色の設定 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* 自己紹介セクション */
 .intro {
     display: flex;
+    /* フレックスボックスを使用して画像とテキストを横並び */
     align-items: center;
+    /* 中央揃え */
 }
 
 .intro img {
     border-radius: 50%;
+    /* 画像を丸くする */
     width: 150px;
+    /* 画像の幅 */
     height: 150px;
+    /* 画像の高さ */
     margin-right: 20px;
+    /* 画像とテキストの間隔 */
 }
 
 /* フッター */
 footer {
     text-align: center;
+    /* テキストの中央揃え */
     padding: 10px;
+    /* パディングの設定 */
     background-color: #ddd;
     font-size: 0.9em;
+    /* フォントサイズの設定 */
 }
