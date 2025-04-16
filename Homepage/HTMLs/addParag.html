@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM操作とイベントハンドリングの実践</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #content {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM操作とイベントハンドリングの実践例</h1>
+    <button id="add-paragraph">段落を追加</button>
+    <div id="content">
+        <p>ここに段落が追加されます。</p>
+    </div>
+
+    <script>
+        // DOMが完全に読み込まれた後に処理を実行する
+        document.addEventListener("DOMContentLoaded", function () {
+            const btn = document.getElementById("add-paragraph");
+            const contentDiv = document.getElementById("content");
+
+            // ボタンがクリックされた時のイベントハンドラ
+            btn.addEventListener("click", function () {
+                // 新しい段落の作成
+                const newPara = document.createElement("p");
+                newPara.textContent = "新しく追加された段落です。";
+                // 新しい段落をcontentDivの末尾に追加
+                contentDiv.appendChild(newPara);
+            });
+        });
+    </script>
+</body>
+
+</html>
