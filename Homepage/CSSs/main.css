@@ -1,0 +1,129 @@
+@charset "UTF-8";
+body {
+  font-family: "Arial, sans-serif";
+  /* フォントの指定 */
+  color: #333;
+  /* テキストカラーの指定 */
+  line-height: 1.6;
+  /* 行間の指定 */
+  background-color: #f9f9f9;
+  /* 背景色の指定 */
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  max-width: 800px;
+  /* 最大幅の設定 */
+  margin-left: auto;
+  margin-right: auto;
+  /* 左右のマージンを自動にすることで中央寄せ */
+  margin-top: 20px;
+  /* 上のマージンを20pxにする */
+  margin-bottom: 20px;
+  /* 下のマージンを20pxにする */
+  padding: 15px;
+}
+
+.flex--center, header nav ul, main section.intro {
+  display: flex;
+  /* フレックスボックスを使用して要素を横並び */
+  justify-content: center;
+  /* 横中央寄せ */
+}
+.flex--space-between, header nav .container {
+  display: flex;
+  /* フレックスボックスを使用して要素を横並び */
+  justify-content: space-between;
+  /* 要素間のスペースを均等に分配 */
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+header {
+  background-color: #4CAF50;
+  /* ヘッダーの背景色 */
+  color: #fff;
+  /* ヘッダーの文字色 */
+  padding: 15px;
+  /* ヘッダーのパディング */
+  text-align: center;
+  /* テキストの中央揃え */
+}
+header nav ul {
+  list-style: none;
+  /* リストスタイルのリセット */
+  padding: 0;
+  /* パディングのリセット */
+  margin: 10px 0;
+  /* マージンの設定 */
+}
+header nav ul li {
+  margin: 0 15px;
+  /* リストアイテムのマージン */
+}
+header nav ul li a {
+  color: #fff;
+  /* リンクの文字色 */
+  text-decoration: none;
+  /* リンクの下線を消す */
+}
+header nav ul li a:hover {
+  /* ホバー時のスタイル */
+  text-decoration: underline;
+  /* 下線を表示 */
+}
+
+main {
+  max-width: 800px;
+  /* 最大幅の設定 */
+  margin-left: auto;
+  margin-right: auto;
+  /* 左右のマージンを自動にすることで中央寄せ */
+  margin-top: 20px;
+  /* 上のマージンを20pxにする */
+  margin-bottom: 20px;
+  /* 下のマージンを20pxにする */
+  background-color: #fff;
+  /* 背景色の設定 */
+  padding: 30px;
+  /* パディングの設定 */
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Safari */
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Firefox */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Chrome, IE 9+, Opera 15+ */
+}
+main section.intro img {
+  border-radius: 50%;
+  /* 画像を丸くする */
+  width: 150px;
+  /* 画像の幅を150pxに設定 */
+  height: 150px;
+  /* 画像の高さを150pxに設定 */
+  margin-right: 30px;
+  /* 画像の右側にダブルギャップのマージンを設定 */
+  /* 画像とテキストの間隔 */
+}
+main section.intro div h2 {
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  /* テキストの中央揃え */
+  padding: 10px;
+  /* パディングの設定 */
+  background-color: #ddd;
+  font-size: 0.9em;
+  /* フォントサイズの設定 */
+}
+
+/*# sourceMappingURL=main.css.map */

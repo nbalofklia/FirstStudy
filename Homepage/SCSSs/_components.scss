@@ -1,0 +1,107 @@
+// 各コンポーネントのスタイルを定義するファイル
+@use "variables" as *;
+@use "mixins" as *;
+@use "layout" as *;
+
+header
+
+/* ヘッダー部分 */
+    {
+    background-color: $brand-color;
+    /* ヘッダーの背景色 */
+    color: $link-hover;
+    /* ヘッダーの文字色 */
+    padding: $base-gap;
+    /* ヘッダーのパディング */
+    text-align: center;
+    /* テキストの中央揃え */
+
+
+    nav
+
+    /* ナビゲーション */
+        {
+        .container {
+            @extend .flex--space-between;
+        }
+
+        ul {
+            @extend .flex--center;
+            list-style: none;
+            /* リストスタイルのリセット */
+            padding: 0;
+            /* パディングのリセット */
+            margin: 10px 0;
+            /* マージンの設定 */
+
+
+            li {
+                margin: 0 $base-gap;
+                /* リストアイテムのマージン */
+
+                a {
+                    color: $link-hover;
+                    /* リンクの文字色 */
+                    text-decoration: none;
+
+                    /* リンクの下線を消す */
+                    &:hover {
+                        /* ホバー時のスタイル */
+                        text-decoration: underline;
+                        /* 下線を表示 */
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+main
+
+/* メインコンテンツ */
+    {
+    @include center-block($max-content);
+    background-color: #fff;
+    /* 背景色の設定 */
+    padding: $double-gap;
+    /* パディングの設定 */
+    @include box-shadow(0, 0, 10px, rgba(0, 0, 0, 0.1));
+
+    section.intro {
+        @extend .flex;
+        @extend .flex--center;
+
+        img {
+            border-radius: 50%;
+            /* 画像を丸くする */
+            width: 150px;
+            /* 画像の幅を150pxに設定 */
+            height: 150px;
+            /* 画像の高さを150pxに設定 */
+            margin-right: $double-gap;
+            /* 画像の右側にダブルギャップのマージンを設定 */
+            /* 画像とテキストの間隔 */
+        }
+
+        div {
+            h2 {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+
+footer
+
+/* フッター */
+    {
+    text-align: center;
+    /* テキストの中央揃え */
+    padding: 10px;
+    /* パディングの設定 */
+    background-color: #ddd;
+    font-size: 0.9em;
+    /* フォントサイズの設定 */
+}

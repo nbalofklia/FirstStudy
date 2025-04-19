@@ -1,0 +1,11 @@
+// npm init -y で初期化（package.jsonの生成）
+// npm install --save-dev sass でSassをインストール
+// package.jsonに "scripts": { "sass": "sass SCSSs/main.scss CSSs/main.css" } を追加
+// Homepageのディレクトリで npm run sass を実行すると、SCSSs/main.scss を CSSs/main.css にコンパイルする
+// watchオプションをつけることで、ファイルの変更を監視して自動でコンパイルしてくれる
+
+@use "variables";
+@use "mixins";
+@use "base";
+@use "layout";
+@use "components";

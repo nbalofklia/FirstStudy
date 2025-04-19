@@ -1,0 +1,23 @@
+// 繰り返し使うスタイルをまとめたファイル
+// 横中央寄せ
+@mixin center-block($max-width) {
+    max-width: $max-width;
+    /* 最大幅の設定 */
+    margin-left: auto;
+    margin-right: auto;
+    /* 左右のマージンを自動にすることで中央寄せ */
+    margin-top: 20px;
+    /* 上のマージンを20pxにする */
+    margin-bottom: 20px;
+    /* 下のマージンを20pxにする */
+}
+
+// ボックスシャドウ
+@mixin box-shadow($x, $y, $blur, $color) {
+    -webkit-box-shadow: $x $y $blur $color;
+    /* Safari */
+    -moz-box-shadow: $x $y $blur $color;
+    /* Firefox */
+    box-shadow: $x $y $blur $color;
+    /* Chrome, IE 9+, Opera 15+ */
+}

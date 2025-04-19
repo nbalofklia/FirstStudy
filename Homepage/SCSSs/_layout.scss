@@ -1,0 +1,33 @@
+// 各種レイアウトを定義するファイル
+// 主要コンテナを中央寄せ
+@use "variables" as *;
+@use "mixins" as *;
+
+.container {
+    @include center-block($max-content);
+    padding: $base-gap;
+}
+
+// Flexbox ライブラリ
+.flex {
+    &--center {
+        display: flex;
+        /* フレックスボックスを使用して要素を横並び */
+        justify-content: center;
+        /* 横中央寄せ */
+    }
+
+    &--space-between {
+        display: flex;
+        /* フレックスボックスを使用して要素を横並び */
+        justify-content: space-between;
+        /* 要素間のスペースを均等に分配 */
+    }
+}
+
+// グリッド例
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $base-gap;
+}
