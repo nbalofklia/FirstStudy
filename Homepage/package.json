@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch SCSSs/main.scss CSSs/main.css"
+    "sass": "sass --watch SCSSs/main.scss CSSs/main.css",
+    "typescript": "tsc --watch --outDir ./JavaScripts --rootDir ./TypeScripts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "sass": "^1.86.3"
+    "sass": "^1.86.3",
+    "typescript": "^5.8.3"
   }
 }
