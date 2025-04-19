@@ -52,6 +52,51 @@
             <h2>サーバーからの情報</h2>
             <div id="info-area">ここに JSON の message が表示されます</div>
         </section>
+        <!-- 練習課題セクション -->
+        <section id="exercises">
+            <h2>以下は、JavaScriptの練習欄です。</h2>
+            <!-- 1. 簡単電卓 -->
+            <div id="calc">
+                <h3>1. 簡単電卓</h3>
+                <input id="calc-x" type="number" placeholder="数値 x">
+                <select id="calc-op">
+                    <option value="+">+</option>
+                    <option value="-">−</option>
+                    <option value="*">×</option>
+                    <option value="/">÷</option>
+                </select>
+                <input id="calc-y" type="number" placeholder="数値 y">
+                <button id="calc-btn">計算</button>
+                <p>結果: <span id="calc-result"></span></p>
+            </div>
+
+            <!-- 2. 偶数フィルター -->
+            <div id="filter">
+                <h3>2. 偶数フィルター</h3>
+                <p>元の配列: <span id="orig-array"></span></p>
+                <button id="filter-btn">偶数を抽出</button>
+                <p>偶数の配列: <span id="filtered-array"></span></p>
+            </div>
+
+            <!-- 3. 年齢チェック -->
+            <div id="age-check">
+                <h3>3. 年齢チェック</h3>
+                <input id="age-input" type="number" placeholder="年齢を入力">
+                <button id="age-btn">判定</button>
+                <p>判定結果: <span id="age-result"></span></p>
+            </div>
+
+            <!-- 4. 関数合成 -->
+            <div id="composition">
+                <h3>4. 関数合成</h3>
+                <p>実行: (入力 + 1) × 2</p>
+                <input id="comp-input" type="number" placeholder="数値を入力">
+                <button id="comp-btn">実行</button>
+                <p>結果: <span id="comp-result"></span></p>
+            </div>
+        </section>
+
+
     </main>
 
     <!-- フッター -->
