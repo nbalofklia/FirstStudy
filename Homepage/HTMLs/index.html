@@ -41,6 +41,16 @@
         <section id="works">
             <h2>私の作品</h2>
             <p>ここには、今まで制作したWebサイトやアプリのサンプルを掲載予定です。</p>
+            <div class="grid-3">
+                <div class="card">作品 1</div>
+                <div class="card">作品 2</div>
+                <div class="card">作品 3</div>
+            </div>
+        </section>
+        <!-- JSON 取得結果表示 -->
+        <section id="info">
+            <h2>サーバーからの情報</h2>
+            <div id="info-area">ここに JSON の message が表示されます</div>
         </section>
     </main>
 
@@ -50,6 +60,9 @@
     </footer>
 
     <!-- 外部JavaScriptファイルの読み込み -->
+    <!-- jQueryをCDNから読み込み（必要に応じて） -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- script.jsを読み込み（必要に応じて） -->
     <script src="../JavaScripts/script.js"></script>
 </body>
 

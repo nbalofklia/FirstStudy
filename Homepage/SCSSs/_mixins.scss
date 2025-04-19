@@ -18,6 +18,10 @@
     /* Safari */
     -moz-box-shadow: $x $y $blur $color;
     /* Firefox */
+    -ms-box-shadow: $x $y $blur $color;
+    /* IE 9+ */
+    -o-box-shadow: $x $y $blur $color;
+    /* Opera 15+ */
     box-shadow: $x $y $blur $color;
     /* Chrome, IE 9+, Opera 15+ */
 }
