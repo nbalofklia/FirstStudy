@@ -27,7 +27,7 @@ body {
   padding: 15px;
 }
 
-.flex--center, header nav ul, main section.intro {
+.flex--center, header nav ul, main .intro {
   display: flex;
   /* フレックスボックスを使用して要素を横並び */
   justify-content: center;
@@ -42,8 +42,22 @@ body {
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+}
+@media screen and (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 header {
@@ -67,6 +81,15 @@ header nav ul {
 header nav ul li {
   margin: 0 15px;
   /* リストアイテムのマージン */
+}
+@media screen and (max-width: 768px) {
+  header nav ul li {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav ul li li {
+    margin: 8px 0;
+  }
 }
 header nav ul li a {
   color: #fff;
@@ -98,10 +121,14 @@ main {
   /* Safari */
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* Firefox */
+  -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* IE 9+ */
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Opera 15+ */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* Chrome, IE 9+, Opera 15+ */
 }
-main section.intro img {
+main .intro img {
   border-radius: 50%;
   /* 画像を丸くする */
   width: 150px;
@@ -112,7 +139,16 @@ main section.intro img {
   /* 画像の右側にダブルギャップのマージンを設定 */
   /* 画像とテキストの間隔 */
 }
-main section.intro div h2 {
+@media screen and (max-width: 768px) {
+  main .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  main .intro img {
+    margin: 0 0 1rem 0;
+  }
+}
+main .intro div h2 {
   margin-top: 0;
 }
 

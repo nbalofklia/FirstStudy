@@ -25,9 +25,23 @@
     }
 }
 
-// グリッド例
+// グリッドレイアウト
 .grid-3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: $base-gap;
+
+    @include respond(mobile) {
+        // スマホ：1カラム
+        grid-template-columns: 1fr;
+    }
+
+    @include respond(tablet) {
+        // タブレット：2カラム
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(desktop) {
+        // PC：3カラム（デフォルトなので省略可）
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

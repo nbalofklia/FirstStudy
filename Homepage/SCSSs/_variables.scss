@@ -14,3 +14,8 @@ $base-font-size: 16px;
 
 // レイアウト
 $max-content: 800px;
+
+// ブレークポイント
+$bp-mobile: 768px; // モバイル用のブレークポイント
+$bp-tablet: 1024px; // タブレット用のブレークポイント
+$bp-desktop: 1280px; // デスクトップ用のブレークポイント

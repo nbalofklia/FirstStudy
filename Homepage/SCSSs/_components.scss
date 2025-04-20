@@ -3,7 +3,7 @@
 @use "mixins" as *;
 @use "layout" as *;
 
-header
+header // _components.scss
 
 /* ヘッダー部分 */
     {
@@ -32,12 +32,21 @@ header
             padding: 0;
             /* パディングのリセット */
             margin: 10px 0;
+
             /* マージンの設定 */
-
-
             li {
                 margin: 0 $base-gap;
+
                 /* リストアイテムのマージン */
+                @include respond(mobile) {
+                    // スマホ時に縦並び
+                    flex-direction: column;
+                    align-items: center;
+
+                    li {
+                        margin: 8px 0;
+                    }
+                }
 
                 a {
                     color: $link-hover;
@@ -68,8 +77,7 @@ main
     /* パディングの設定 */
     @include box-shadow(0, 0, 10px, rgba(0, 0, 0, 0.1));
 
-    section.intro {
-        @extend .flex;
+    .intro {
         @extend .flex--center;
 
         img {
@@ -82,6 +90,16 @@ main
             margin-right: $double-gap;
             /* 画像の右側にダブルギャップのマージンを設定 */
             /* 画像とテキストの間隔 */
+        }
+
+        // スマホ時に縦並び＆画像マージン調整
+        @include respond(mobile) {
+            flex-direction: column;
+            text-align: center;
+
+            img {
+                margin: 0 0 1rem 0;
+            }
         }
 
         div {
